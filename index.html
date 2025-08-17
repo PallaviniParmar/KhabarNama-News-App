@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhabarNama</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>KhabarNama</h1>
+            <p>Stay updated with the latest headlines from around the world</p>
+        </div>
+    </div>
+
+    <div class="search-category">
+        <div class="search-container">
+            <input type="text" id="search" class="search-box" placeholder="Search latest news here...">
+            <button class="search-button" onclick="searchNews()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="category">
+            <button class="category-btn active" data-category="General">
+                <i class="fas fa-globe"></i> General
+            </button>
+            <button class="category-btn" data-category="Business">
+                <i class="fas fa-chart-line"></i> Business
+            </button>
+            <button class="category-btn" data-category="Entertainment">
+                <i class="fas fa-film"></i> Entertainment
+            </button>
+            <button class="category-btn" data-category="Health">
+                <i class="fas fa-heartbeat"></i> Health
+            </button>
+            <button class="category-btn" data-category="Science">
+                <i class="fas fa-flask"></i> Science
+            </button>
+            <button class="category-btn" data-category="Sports">
+                <i class="fas fa-football-ball"></i> Sports
+            </button>
+            <button class="category-btn" data-category="Technology">
+                <i class="fas fa-microchip"></i> Technology
+            </button>
+        </div>
+    </div>
+
+    <div class="news-grid" id="newsGrid"></div>
+    <div class="loading" id="loading" style="display:none;">
+        <div class="loading-spinner"></div>
+        <p>Loading latest news...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
